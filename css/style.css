@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #262626;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-card {
+    width: 20%;
+    min-height: 250px;
+    text-align: center;
+    background-color: #fff;
+    color: #333;
+    border-radius: 10px;
+    transition: all 5s ease-in-out;
+}
+
+.profile-card:hover {
+    box-shadow: 0 0 0 7px #ddd;
+}
+
+.cover {
+    display: block;
+    width: 100%;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.profile {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-top: -70px;
+    box-shadow: 0 0 0 0 #000;
+    transition: box-shadow 0.7s;
+}
+
+.profile:hover {
+    box-shadow: 0 0 0 7px #666;
+}
+
+.profile-card h1 {
+    font-weight: 600;
+}
+
+.donate {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #ccc;
+    border: none;
+    border-radius: 5px;
+    color: #666;
+    padding: 6px 25px;
+    margin: 25px 0;
+    /* box-shadow: 0 0 0 0 #000; */
+    transition: box-shadow 0.5s;
+    opacity: 0;
+    font-weight: 700;
+}
+
+.donate:hover {
+    box-shadow: 0 0 0 4px #666;
+    background-color: #000;
+    color: #fff;
+    font-weight: 700;
+}
+
+.profile-card:hover .donate {
+    opacity: 1;
+    transition: all 5s ease-in-out;
+}
+
+.row {
+    display: flex;
+    justify-content: space-around;
+}
+
+.row h2 {
+    font-weight: 500;
+    font-size: 30px;
+}
+
+.view-profile {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #666;
+    color: #000;
+    font-weight: 700;
+    width: 100%;
+    padding: 15px 0;
+    margin-top: 20px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.view-profile:hover {
+    background-color: #000;
+    color: #ddd;
+    transition: all  3s ease;
+}
